@@ -13,22 +13,22 @@ namespace CprBrokerNotificationReceiver
         {
             string filePath = System.Configuration.ConfigurationManager.AppSettings["filePath"];
             string fileName = System.Configuration.ConfigurationManager.AppSettings["fileName"];
-
             string target = string.Format("{0}/{1}", filePath, fileName);
 
-            string SoapEnvelope = SerializeToXML(notification);
+            string soapEnvelope = SerializeToXML(notification);
+
             if (!File.Exists(target))
             {
                 using (StreamWriter sw = File.CreateText(target))
                 {
-                    sw.WriteLine(SoapEnvelope);
+                    sw.WriteLine(soapEnvelope);
                 }
             }
             else
             {
                 using (StreamWriter sw = File.AppendText(target))
                 {
-                    sw.WriteLine(SoapEnvelope);
+                    sw.WriteLine(soapEnvelope);
                 }
             }
         }

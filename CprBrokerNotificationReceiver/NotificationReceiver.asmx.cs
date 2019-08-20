@@ -8,7 +8,7 @@ using System.Web.Services;
 namespace CprBrokerNotificationReceiver
 {
     /// <summary>
-    /// This API sole purpose is to receive notifications(SOAP Requests) from CPR Broker.
+    /// This API sole purpose is to receive notifications from CPR Broker.
     /// An an example
     /// </summary>
     [WebService(Namespace = "https://CprBrokerNotificationReceiver/")]
