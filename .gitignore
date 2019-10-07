@@ -1,0 +1,8 @@
+packages/
+CprBrokerNotificationReceiver/bin/
+CprBrokerNotificationReceiver/obj/
+CprBrokerNotificationReceiver/Properties/
+CprBrokerNotificationReceiver/Web.Debug.config
+CprBrokerNotificationReceiver/Web.Release.config
+CprBrokerNotificationReceiver/CprBrokerNotificationReceiver.csproj.user
+.vs/
